@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content" android:weightSum="2" >
+            <LinearLayout
+                android:layout_width="0dp" android:layout_weight="1" android:orientation="vertical"
+                android:layout_height="wrap_content"
+                >
+                    <TextView
+                        android:layout_width="match_parent" android:text="TeamA" android:layout_margin="5dp"
+                        android:layout_height="wrap_content" android:textSize="12sp"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content" android:text="0" android:layout_margin="5dp"
+                        android:layout_height="wrap_content" android:id="@+id/txtScoreA"
+                        android:textSize="20sp" android:gravity="center"> </TextView>
+
+                    <Button
+                        android:layout_width="match_parent" android:text="+3"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content" android:textSize="14sp"
+                        android:id="@+id/btnAThreePlus"></Button>
+
+                <Button
+                    android:layout_width="match_parent" android:text="+1"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content" android:textSize="14sp"
+                    android:id="@+id/btnAOnePlus"></Button>
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="0dp" android:layout_weight="1" android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent" android:text="TeamB" android:layout_margin="5dp"
+                android:layout_height="wrap_content" android:textSize="12sp"></TextView>
+            <TextView
+                android:layout_width="wrap_content" android:text="0" android:layout_margin="5dp"
+                android:layout_height="wrap_content" android:id="@+id/txtScoreB"
+                android:textSize="20sp" android:gravity="center"> </TextView>
+
+            <Button
+                android:layout_width="match_parent" android:text="+3"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" android:textSize="14sp"
+                android:id="@+id/btnBThreePlus"></Button>
+
+            <Button
+                android:layout_width="match_parent" android:text="+1"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" android:textSize="14sp"
+                android:id="@+id/btnBOnePlus"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content" android:gravity="center"
+        android:id="@+id/btnRest" android:layout_gravity="center"
+        android:layout_height="wrap_content" android:text="Reset"></Button>
+</LinearLayout>
+</layout>
